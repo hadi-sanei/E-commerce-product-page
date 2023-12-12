@@ -11,7 +11,46 @@
 </head>
 
 <body>
- 
+  <div id="full-page" class="w-full h-full z-50 fixed top-0 left-0 bg-[rgba(0,0,0,.7)] hidden"></div>
+ <header class="relative max-w-7xl m-auto flex items-center justify-between p-7 border-b border-x-stone-500">
+  <div class="flex items-center gap-4">
+    <img id="icon-menu" src="./assets/images/icon-menu.svg" class="sm:hidden cursor-pointer" alt="">
+    <a href="#" class="font-bold text-3xl text-black mb-2">sneakers</a>
+    <nav id="menu" class="sm:items-center w-56 sm:w-min h-full sm:static fixed top-0 -left-full z-50 hover:[&>ul>li>a]:text-black">
+      <ul class="sm:flex items-center gap-3 space-y-5 sm:space-y-0">
+        <span id="icon-close-menu-mobile" class="block mb-12 cursor-pointer">
+          <img src="./assets/images/icon-close.svg" alt="">
+        </span>
+        <li class="category">
+          <a href="#">Collections</a>
+        </li>
+        <li class="category">
+          <a href="#">Men</a>
+        </li>
+        <li class="category">
+          <a class="" href="#">Women</a>
+        </li>
+        <li class="category">
+          <a href="#">About</a>
+        </li>
+        <li class="category">
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  
+  <div class="flex items-center gap-4">
+    <img src="./assets/images/icon-cart.svg" class="mr-6 cursor-pointer peer" alt="">
+    <div class="hidden peer-hover:block bg-white sm:w-72 w-11/12 absolute right-4 sm:right-0 -bottom-36 rounded-lg shadow-[4px_10px_21px_rgba(0,0,0,0.3)]">
+      <span class="block border-zinc-400 border-b p-2 pb-4">Cart</span>
+      <div class="flex items-center justify-center h-28 font-bold text-center text-stone-500 text-sm">
+        Yor cart is empty.
+      </div>
+    </div>
+    <img src="./assets/images/image-avatar.png" class="w-12 cursor-pointer" alt="">
+  </div>
+ </header>
 </body>
-
+<script src="./assets/js/cod.js"></script>
 </html>
