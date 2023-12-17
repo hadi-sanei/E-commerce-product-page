@@ -13,3 +13,24 @@
 .category >a:hover{
     @apply before:opacity-100;
 }
+.product-quantity{
+    appearance: textfield;
+    @apply outline-none border-none w-full text-center bg-transparent px-3;
+}
+.product-image{
+    @apply opacity-100 visible transition-all;
+}
+.product-image.change{
+    @apply opacity-0 invisible;
+}
+
+
+.product-thumbnail{
+    @apply bg-white overflow-hidden rounded-lg;
+}
+.product-thumbnail.active{
+    @apply border-2 border-orange-500;
+}
+.product-thumbnail:hover > img{
+    @apply opacity-50;
+}
