@@ -33,6 +33,8 @@ let lightbox = document.querySelector('#lightbox');
 let icon_close_lightbox = document.querySelector('#icon-close-lightbox');
 let btns_previousImage = document.querySelectorAll('.btn-previousImage');
 let btns_nexImage = document.querySelectorAll('.btn-nexImage');
+let icon_cart = document.querySelector('.icon-cart');
+let basketItem = document.querySelector('.basketItem');
 
 products_thumbnail.forEach(product_thumbnail => {
     product_thumbnail.addEventListener('click', () => {
@@ -110,3 +112,8 @@ btns_previousImage.forEach((btn_previousImage)=>{
     lightbox.querySelector('.product-image-lightbox').src = src;
     addAndRemoveClass(product_image, 'change');
  }
+
+icon_cart.addEventListener('click', function () {
+    console.log('object');
+    basketItem.classList.toggle('hidden');
+});
