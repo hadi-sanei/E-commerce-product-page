@@ -31,6 +31,6 @@
 .product-thumbnail.active{
     @apply border-2 border-orange-500;
 }
-.product-thumbnail:hover > img{
+.product-thumbnail:hover > img,.product-thumbnail.active > img{
     @apply opacity-50;
 }
