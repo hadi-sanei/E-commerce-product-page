@@ -28,3 +28,17 @@ let basketItem = document.querySelector('.basketItem');
 icon_cart.addEventListener('click', function () {
     basketItem.classList.toggle('hidden');
 });
+
+
+
+
+let addToBasket = document.querySelector('#addToBasket');
+let inputQuantity = document.querySelector('input[name="quantity"]');
+let plusQuantity = document.querySelector('#plusToBasket');
+let minusQuantity = document.querySelector('#minusToBasket');
+plusQuantity.addEventListener('click', () => {
+    inputQuantity.value++;
+});
+minusQuantity.addEventListener('click', () => {
+    inputQuantity.value == 0 ? inputQuantity.value = 0 : inputQuantity.value--;
+});

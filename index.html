@@ -41,11 +41,18 @@
   </div>
   
   <div class="flex items-center gap-4">
-    <img src="./assets/images/icon-cart.svg" class="icon-cart mr-6 cursor-pointer" alt="">
+    <div class="relative">
+      <img src="./assets/images/icon-cart.svg" class="icon-cart mr-6 cursor-pointer" alt="">
+      <div id="item-counter" class="hidden absolute -top-2 right-5 text-center text-xs bg-orange-500 w-4 text-white rounded-full"></div>
+    </div>
     <div class="basketItem hidden flex flex-col bg-white sm:w-72 w-11/12 sm:h-auto absolute right-4 sm:right-0 top-32 sm:top-24 z-40 rounded-lg shadow-[4px_10px_21px_rgba(0,0,0,0.3)]">
       <span class="block border-zinc-400 border-b p-2 pb-4">Cart</span>
-      <div id="cart-item" class="flex items-center justify-center h-36 p-2 font-bold text-center text-stone-500 text-sm">
-        Yor cart is empty.       
+      <div id="cart-item" class="flex flex-col items-center justify-center h-36 p-2 font-bold text-center text-stone-500 text-sm">
+        <p>Yor cart is empty.</p>
+        
+      </div>
+      <div class="p-2 hidden">
+        <button class="bg-orange-500 rounded-lg w-full p-3 text-white">Checkout</button>
       </div>
     </div>
     <img src="./assets/images/image-avatar.png" class="w-12 cursor-pointer hover:border-2 hover:border-orange-500 rounded-full" alt="">
@@ -64,7 +71,7 @@
           <svg width="16" height="18" xmlns="http://www.w3.org/2000/svg"><path class="w-full h-full group-hover:stroke-orange-500" d="m2 1 8 8-8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
         </button>
 
-        <img src="./assets/images/image-product-1.jpg" data-product-id="item-cart-1" class="product-image sm:rounded-lg" alt="">
+        <img id="productImage" src="./assets/images/image-product-1.jpg" data-product-id="item-cart-1" class="product-image sm:rounded-lg" alt="">
       </div>
       <div class="hidden sm:grid grid-cols-4 gap-5">
         <button class="product-thumbnail active">
@@ -84,7 +91,7 @@
     <section class="p-5 sm:p-8 self-center">
       <header class="mb-11">
         <span class="text-orange-500 mb-4 block">SNEAKER COMPANY</span>
-        <h1 class="lg:text-5xl text-4xl font-bold">Fall Limited Edition Sneaker</h1>
+        <h1 id="productTitle" class="lg:text-5xl text-4xl font-bold">Fall Limited Edition Sneaker</h1>
       </header>
       <section class="my-8">
         <p class="text-stone-500">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer. </p>  
@@ -150,7 +157,7 @@
  </div>
 </body>
 <script src="./assets/js/function.js"></script>
-<script src="./assets/js/header.js"></script>
 <script src="./assets/js/slider.js"></script>
+<script src="./assets/js/cart.js"></script>
 <script src="./assets/js/main.js"></script>
 </html>
