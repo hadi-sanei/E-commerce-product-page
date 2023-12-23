@@ -440,6 +440,16 @@ video {
   display: none;
 }
 
+@font-face {
+  font-family: 'KumbhSans-medium';
+
+  src: url('../fonts/KumbhSans-Medium.ttf') format('trueType');
+}
+
+body{
+  font-family: 'KumbhSans-medium';
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;

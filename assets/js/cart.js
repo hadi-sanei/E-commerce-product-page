@@ -113,7 +113,7 @@ function createCartItem(product) {
       <img src="${product.imageUrl}" class="w-full" alt="">
     </a>
     <div class="font-normal">
-      <h4>${product.productName}</h4>
+      <h4 class="text-xs">${product.productName}</h4>
       <p class="text-left">${product.finalPrice} * ${product.quantity} <span class="font-bold text-black"> $${totalPrice.toFixed(2)}</span></p>
     </div>
     <button data-product="#${product.productID}" class="icon-delete-item ml-auto pr-3">
